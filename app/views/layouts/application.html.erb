@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <title>RailsGulp</title>
+  <!--Still allow additional scripts / styles from Sprockets-->
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div ui-view></div>
+     <!--Todo cache busting via md5-appended filename? https://github.com/sindresorhus/gulp-rev -->
+    <script src="assets/build/js/main.js"></script>
+</body>
+</html>
